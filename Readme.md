@@ -25,7 +25,9 @@ or processes a CSS file.
 
 #### Generating a legacy style sheet from an existing CSS file:
 
-    $ legacy main.css > main.legacy.css
+    $ legacy main.css 75em > main.legacy.css
+
+The resulting style sheet includes all media queries that match `min-width <= 75em`
 
 ### API
 

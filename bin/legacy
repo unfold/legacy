@@ -13,8 +13,6 @@ var args = program.args,
     minWidth = parseInt(args.pop(), 10),
     file = args.pop()
 
-console.log(minWidth, file)
-
 if (file) {
     var input = fs.readFileSync(file, 'utf-8');
     var output = legacy(input, minWidth);
